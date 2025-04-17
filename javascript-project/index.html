@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+   <header>
+        <h1>User Dashboard</h1>
+       <input type="text" id="searchInput" placeholder="Search by name..."/>
+       <div class="filters">
+            <button data-gender="all" class="action">All</button>
+           <button data-gender="male">Male</button>
+           <button data-gender="female">Female</button>
+           <select id="sortSelect">
+            <option value="age">Sort by Age</option>
+            <option value="name">Sort by Name</option>
+           </select>
+       </div>
+  </header>
+    <main id="userContainer">
+        
+    </main>
+    <div id="loader" class="loader hidden"></div>
+    <div id="error" class="error hidden">Failed to load data. Please try again.</div>
+   
+  
+<script src="script.js"></script>
+</body>
+</html>

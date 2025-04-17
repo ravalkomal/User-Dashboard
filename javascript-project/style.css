@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/*Header style*/
+header{
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+   display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-gap: 10px;
+}
+header h1{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+}
+/*Search*/
+#searchInput{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+/*buuton*/
+.filters button{
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: 500;    
+}
+.filters select{
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: 500;    
+}
+/*main setion*/
+#userContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+.card{
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    grid-gap: 10px;
+}
+.card img{
+    width: 100px;
+    border-radius: 50px;
+}
+.card .info h3 {
+    text-align: left;
+    font-size: 18px;
+    margin: 5px;
+  }
+.card .info p{
+    text-align: left;
+    font-size: 15px;
+    margin: 5px;
+    color: #6b6767;
+  }
+.card button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: darkturquoise;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+
+
+/* Loader Styles */
+  .loader {
+    border: 8px solid darkturquoise;
+    border-top: 8px solid #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  .hidden { display: none; }
+  
+  /* Error Message */
+  .error {
+    color: red;
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #userContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+  
